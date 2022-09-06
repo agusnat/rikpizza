@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rik Pizza</title>
+  <link rel="stylesheet" href="./assets/css/rikpizza.css">
+  <link rel="stylesheet" href="./assets/css/media_query.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<header>
+      <nav class="navbar">
+        <div class="navbar-wrapper">
+          <a href="#">
+            <img src="./assets/images/logo.svg" alt="logo" width="220">
+          </a>
+          <ul class="navbar-nav">
+            <li>
+              <a href="#home" class="nav-link">INICIO</a>
+            </li>
+            <li>
+              <a href="#menu" class="nav-link">MENÚ</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link">CONTACTO</a>
+            </li>
+          </ul>
+          <div class="navbar-btn-group">
+            <button class="menu-toggle-btn">
+              <span class="line one"></span>
+              <span class="line two"></span>
+              <span class="line three"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="home-left">
+          <h1 class="main-heading">La que más gusta!</h1>
+          <p class="home-text">Compartiendo tu amor por la pizza desde 1999.</p>
+          <div class="btn-group">
+            <button class="btn btn-primary btn-icon">
+              <img src="./assets/images/menu.svg" alt="menu icon" width="24">
+              Nuestro menú
+            </button>
+            <button class="btn btn-secondary btn-icon">
+              Contacto
+            </button>
+          </div>
+        </div>
+        <div class="home-right">
+          <div class="img-box">
+            <img src="./assets/images/local.png" alt="home shop" class="home-img" width="200" loading="lazy">
+          </div>
+        </div>
+      </section>
+      <section class="product" id="menu">
+        <h2 class="section-title underline">Pizzas</h2>
+        <div class="products-grid">
+          <!--<a href="#">
+            <div class="product-card">
+              <div class="img-box">
+                <img src="./assets/images/menu1.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Stracciatella</h3>
+                  <p class="product-price">
+                    <span class="small">$</span>11
+                  </p>
+                </div>
+                <p class="product-text">
+                  tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.
+                </p>
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </a>-->
+            <div class="product-card">
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Cancha</h3>
+                </div>
+                <p class="product-text">
+                  Salsa de tomate, verde, cebolla, orégano y aceitunas verdes
+                </p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Fugazza</h3>
+                </div>
+                <p class="product-text">
+                  Cebolla, verdeo, orégano y aceitunas verdes
+                </p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Muzzarella</h3>
+                </div>
+                <p class="product-text">
+                  Salsa de tomate, muzzarella y aceitunas verdes
+                </p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Anchoas</h3>
+                </div>
+                <p class="product-text">
+                  Salsa de tomate, orégano, ajo y aceitunas verdes
+                </p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Mixta</h3>
+                </div>
+                <p class="product-text">
+                  Mitad anchoas y mitad muzzarella
+                </p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Porteña</h3>
+                </div>
+                <p class="product-text">
+                  Mitad fugazza y mitad muzzarella
+                </p>
+              </div>
+            </div>
+        </div>
+        <h2 class="section-title underline">Especiales</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Muzzarella con anchoas</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, cebolla, orégano, verdeo y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Roquefort</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, muzzarella, roquefort y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Jamón</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, jamón, muzzarella y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Calabresa</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, muzzarella, longaniza a la calabresa, orégano, ají molido y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Fugazzeta</h3>
+              </div>
+              <p class="product-text">
+                Cebolla, orégano, ají molido, muzzarella y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Napolitana</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, muzzarella, ajo, rodajas de tomate, orégano, ají molido y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Verdura</h3>
+              </div>
+              <p class="product-text">
+                Salsa blanca, queso reggianito, acelga y aceitunas negras
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Provoleta</h3>
+              </div>
+              <p class="product-text">
+                Rodajas de provoleta, muzzarella, orégano, ajo, rodajas de tomate y aceitunas negras
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">4 Estaciones</h3>
+              </div>
+              <p class="product-text">
+                1/4 de cancha, 1/4 de fugazza, 1/4 de muzzarella y 1/4 de napolitana
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Primavera</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, muzzarella, rodajas de tomate, huevo picado y aceitunas negras
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Super napolitana</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, jamón, muzzarella, rodajas de tomate, orégano, ají molido, ajo y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Jamón y morrones</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, jamón, morrón, muzzarella y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Palmitos</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, jamón, muzzarella, palmitos, salsa golf y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Ananá</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, jamón, muzzarella, ajo, rodajas de ananá y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Fugazzeta rellena</h3>
+              </div>
+              <p class="product-text">
+                Jamón, muzzarella, cebolla, orégano, ají molido y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">4 Quesos</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, provoleta, roquefort, muzzarella, reggianito y aceitunas negras
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Rúcula y jamón crudo</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, muzzarella, rúcula, jamón crudo y aceitunas verdes
+              </p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-content">
+              <div class="wrapper special">
+                <h3 class="product-name">Rik pizza</h3>
+              </div>
+              <p class="product-text">
+                Salsa de tomate, muzzarella, ajo, jamón, rodajas de tomate, morrones, huevo picado y aceitunas negras
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-left">
+          <div class="map-box">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.794539746788!2d-58.4512907!3d-34.6307383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24e4bbb778cd0cc2!2sRI-K%20PIZZA!5e0!3m2!1ses-419!2sar!4v1662426117141!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="about-right">
+          <h3 class="section-title">Nuestros horarios:</h3>
+          <p class="section-text">Abierto de 12:00 a 14:30 hs y de 19:30 a 23:30 hs
+          <h3>4633-5005 o 4633-7811</h3></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="logo" class="footer-brand" width="180">
+        </a>
+        <div class="social-link">
+            Seguinos en instagram! <a href="https://www.instagram.com/rikpizza.flores/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+        <p class="copyright">&copy; 2022 Rik Pizza - Crafted by <a href="https://rheaestudio.com.ar">RHEA</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="./assets/js/rikpizza.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
