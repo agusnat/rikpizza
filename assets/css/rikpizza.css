@@ -91,7 +91,6 @@ html {
 }
 
 .section-title {
-  max-width: 420px;
   color: var(--white);
   font-size: var(--fs-3);
   font-weight: 600;
@@ -421,6 +420,7 @@ html {
 .section-price {
   float: right;
   text-align: center;
+  margin-top: -5px;
 }
 
 .section-price .price-wrap {
@@ -432,7 +432,7 @@ html {
 .section-price .small {
   font-size: 14px;
   position: absolute;
-  margin-top: -14px;
+  margin-top: -20px;
 }
 
 .product-card .product-text {
