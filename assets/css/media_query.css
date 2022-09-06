@@ -49,6 +49,10 @@
     gap: 60px 40px;
     margin-bottom: 70px;
   }
+
+  .home-bg {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -98,7 +102,6 @@
     flex-direction: row;
     justify-content: space-between;
   }
-
 }
 
 @media (min-width: 1200px) {
