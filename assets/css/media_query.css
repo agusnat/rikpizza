@@ -30,6 +30,7 @@
     max-width: var(--mw);
     margin-inline: auto;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -52,6 +53,11 @@
 
   .home-bg {
     width: 100%;
+  }
+
+  .about .section-wrapper {
+    grid-template-columns: 3fr 4fr;
+    padding: var(--py) 0;
   }
 }
 
