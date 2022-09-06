@@ -114,7 +114,6 @@ html {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background: #161616;
 }
 
 .navbar {
@@ -198,21 +197,24 @@ html {
 
 .menu-toggle-btn.active .three { transform: translateY(-7px) rotate(-45deg); }
 
-
 /*-----------------------------------*\ 
   #HOME
 \*-----------------------------------*/
 
 .home {
   height: 100vh;
-  background: url(../images/bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  width: 100%;
+  /*background: url(../images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;*/
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.home-bg {
+  position: fixed;
+  z-index: -1;
 }
 
 .home-center { text-align: center; }
@@ -437,9 +439,6 @@ html {
 }
 
 .product .btn-primary { margin-inline: auto; }
-
-
-
 /*-----------------------------------*\ 
   #FOOTER
 \*-----------------------------------*/
@@ -483,4 +482,8 @@ footer {
 
 .copyright a {
   color: white;
+}
+
+.product, .about {
+  background: #161616;
 }

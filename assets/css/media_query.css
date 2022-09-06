@@ -22,9 +22,10 @@
   }
 
   .navbar-wrapper,
-  /*.home,*/
+  /*.home,
   .about,
-  .product,
+  .product,*/
+  .section-wrapper,
   .footer-wrapper {
     max-width: var(--mw);
     margin-inline: auto;
