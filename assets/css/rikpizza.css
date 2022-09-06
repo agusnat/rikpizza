@@ -214,7 +214,8 @@ html {
 
 .home-bg {
   position: fixed;
-  z-index: -1;
+  z-index: -99;
+  width: 100%;
 }
 
 .home-center { text-align: center; }
