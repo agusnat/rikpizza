@@ -4,7 +4,7 @@
   --pistachio: hsl(88, 50%, 60%);
   --cultured: hsl(220, 13%, 95%);
   --saffron: #f5c532;
-  --rhythm: hsl(240, 9%, 51%);
+  --rhythm: #fff;
   --white: hsl(0, 0%, 100%);
 
   --fs-1: 46px;
@@ -60,8 +60,6 @@ html {
   background: var(--saffron);
 }
 
-::-webkit-scrollbar-thumb:hover { background: var(--space-cadet); }
-
 
 /*-----------------------------------*\ 
   #REUSED STYLE
@@ -90,7 +88,7 @@ html {
 
 .section-title {
   max-width: 420px;
-  color: var(--space-cadet);
+  color: var(--white);
   font-size: var(--fs-2);
   font-weight: 600;
 }
@@ -109,10 +107,10 @@ html {
 
 .container {
   position: relative;
-  max-width: 1440px;
+  width: 100%;
   margin: auto;
-  background: var(--white);
   overflow: hidden;
+  background: #161616;
 }
 
 .navbar {
@@ -122,7 +120,7 @@ html {
   transform: translateX(-50%);
   width: 100%;
   padding: 20px 30px;
-  background: #1f1f1f;
+  background: #b3001e;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
   z-index: 5;
@@ -135,7 +133,7 @@ html {
 }
 
 .navbar-nav {
-  background: #1f1f1f;
+  background: #b3001e;
   position: absolute;
   top: 75px;
   left: 0;
@@ -202,13 +200,15 @@ html {
 \*-----------------------------------*/
 
 .home {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 50px;
-  padding: 150px var(--px) var(--py);
+  height: 100vh;
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-left { text-align: center; }
+.home-center { text-align: center; }
 
 .home-subtext {
   background: var(--cultured);
@@ -220,12 +220,11 @@ html {
 }
 
 .main-heading {
-  color: var(--space-cadet);
-  font-size: var(--fs-1);
+  color: white;
+  font-size: var(--fs-2);
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -2px;
-  margin-bottom: 30px;
 }
 
 .home-text {
@@ -239,16 +238,6 @@ html {
   flex-direction: column;
   align-items:    center;
   gap: 15px;
-}
-
-.home-right {
-  position: relative;
-  aspect-ratio: 1 / 1;
-}
-
-.home-right .img-box {
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
 }
 
 .home-img {
@@ -275,6 +264,10 @@ html {
 .about-left .map-box {
   aspect-ratio: 1 / 1;
   overflow: hidden;
+}
+
+.about-right {
+  height: 100%;
 }
 
 .map {
@@ -321,7 +314,7 @@ html {
 }
 
 
-.about-right .section-title { margin-bottom: 30px; }
+.about-right .section-title { margin-bottom: 50px; }
 
 .about-right p {
   max-width: 100%;
@@ -334,7 +327,7 @@ html {
 
 .product { padding: var(--py) var(--px); }
 
-.product .section-title { margin-bottom: 30px; }
+.product .section-title { margin-bottom: 50px; }
 
 .product .section-text { margin-bottom: 60px; }
 

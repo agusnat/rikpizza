@@ -12,9 +12,9 @@
 
   .home .btn-group {
     flex-direction:  row;
-    justify-content: center;
   }
 }
+
 
 @media (min-width: 570px) {
   :root {
@@ -22,7 +22,7 @@
   }
 
   .navbar-wrapper,
-  .home,
+  /*.home,*/
   .about,
   .product,
   .footer-wrapper {
@@ -48,7 +48,6 @@
     gap: 60px 40px;
     margin-bottom: 70px;
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -79,11 +78,9 @@
     align-items: center;
   }
 
-  .home-left { text-align: left; }
-
   .home-text { margin-inline: 0; }
 
-  .home .btn-group { justify-content: start; }
+  .home .btn-group { justify-content: center; }
 
   .about {
     grid-template-columns: 3fr 4fr;
