@@ -1,9 +1,9 @@
 :root {
-  --red-orange-crayola: hsl(350, 100%, 35%);
+  --red-orange-crayola: #1f1f1f;
   --space-cadet: hsl(45, 22%, 4%);
   --pistachio: hsl(88, 50%, 60%);
   --cultured: hsl(220, 13%, 95%);
-  --saffron: hsl(45, 91%, 58%);
+  --saffron: #f5c532;
   --rhythm: hsl(240, 9%, 51%);
   --white: hsl(0, 0%, 100%);
 
@@ -96,7 +96,7 @@ html {
 }
 
 .section-title.underline {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #f5c532;
 }
 
 .section-text {
@@ -122,7 +122,7 @@ html {
   transform: translateX(-50%);
   width: 100%;
   padding: 20px 30px;
-  background: hsla(350, 100%, 35%);
+  background: #1f1f1f;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
   z-index: 5;
@@ -135,7 +135,7 @@ html {
 }
 
 .navbar-nav {
-  background: hsl(350, 100%, 35%, 0.6);
+  background: #1f1f1f;
   position: absolute;
   top: 75px;
   left: 0;
@@ -445,7 +445,7 @@ html {
 \*-----------------------------------*/
 
 footer {
-  background: var(--space-cadet);
+  background: #1f1f1f;
   padding: 50px var(--px);
 }
 
