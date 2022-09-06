@@ -74,6 +74,10 @@ html {
   transition: var(--default-transition);
 }
 
+.btn a {
+  color: black;
+}
+
 .btn:hover { filter: saturate(1.05) brightness(1.05); }
 
 .btn-primary { background: var(--saffron); }
@@ -203,6 +207,9 @@ html {
   height: 100vh;
   background: url(../images/bg.jpg) no-repeat center center fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
