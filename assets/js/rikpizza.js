@@ -28,13 +28,13 @@ function myItems(jsonString){
         table += '<div class="product-card"><div class="product-content"><div class="wrapper special">';
         table += '<h3 class="product-name">' + (line.c[0] ? line.c[0].v : '' ) + '</h3><div class="product-price">';
         try{
-          if(line.c[3].v != null)
+          if(line.c[2].v != null || line.c[2] != null)
             table += '<p class="price-wrap"><span class="small">Grande</span>$' + line.c[2].v + '</p>';
         } catch (e) {}
         /*if(!line.c[3] && line.c[2])
           table += '<p class="price-wrap"><span class="small">Gigante</span>$' + line.c[2].v + '</p>'; else*/
         try{
-          if(line.c[3].v != null)
+          if(line.c[3].v != null || line.c[3] != null)
             table += '<p class="price-wrap"><span class="small">Chica</span>$' + line.c[3].v + '</p>';
         } catch (e) {}
         table += '</div></div>';
