@@ -23,7 +23,7 @@ fetch(url).then(response => response.text()).then(data => document.getElementByI
 function myItems(jsonString){
     var json = JSON.parse(jsonString);
     var table = '';
-    console.log(json);
+    //console.log(json);
     json.table.rows.forEach(line => {
         table += '<div class="product-card"><div class="product-content"><div class="wrapper special">';
         table += '<h3 class="product-name">' + (line.c[0] ? line.c[0].v : '' ) + '</h3><div class="product-price">';
