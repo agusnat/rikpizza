@@ -29,10 +29,10 @@ function myItems(jsonString){
         table += '<h3 class="product-name">' + (line.c[0] ? line.c[0].v : '' ) + '</h3><div class="product-price">';
         if(line.c[2])
           table += '<p class="price-wrap"><span class="small">Grande</span>$' + line.c[2].v + '</p>';
-        if(!line.c[3] && line.c[2])
-          table += '<p class="price-wrap"><span class="small">Gigante</span>$' + line.c[2].v + '</p>';
+        /*if(!line.c[3] && line.c[2])
+          table += '<p class="price-wrap"><span class="small">Gigante</span>$' + line.c[2].v + '</p>';*/
         else if(line.c[3])
-          table += '<p class="price-wrap"><span class="small">Grande</span>$' + line.c[3].v + '</p>';
+          table += '<p class="price-wrap"><span class="small">Chica</span>$' + line.c[3].v + '</p>';
         table += '</div></div>';
         table += '<p class="product-text">' + (line.c[1] ? line.c[1].v : '' ) + '</p>';
         table += '</div></div>';
