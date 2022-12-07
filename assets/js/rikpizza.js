@@ -24,7 +24,7 @@ function myItems(jsonString){
     var json = JSON.parse(jsonString);
     var table = '';
     json.table.rows.forEach((line, i) => {
-        if(i > 1){
+        if(i > 3){
           table += '<div class="product-card"><div class="product-content"><div class="wrapper special">';
           table += '<h3 class="product-name">' + (line.c[0] ? line.c[0].v : '' ) + '</h3><div class="product-price">';
           try{
@@ -41,7 +41,7 @@ function myItems(jsonString){
         }
     });
 
-    document.getElementById("empanadas").innerHTML = '<p class="price-wrap"><span class="small">Docena</span>$' + json.table.rows[0].c[2].v + '</p><p class="price-wrap"><span class="small">Unidad</span>$' + json.table.rows[0].c[3].v + '</p>';
-    document.getElementById("canastitas").innerHTML = '<p class="price-wrap"><span class="small">Docena</span>$' + json.table.rows[1].c[2].v + '</p><p class="price-wrap"><span class="small">Unidad</span>$' + json.table.rows[1].c[3].v + '</p>';
+    document.getElementById("empanadas").innerHTML = '<p class="price-wrap"><span class="small">Docena</span>$' + json.table.rows[1].c[2].v + '</p><p class="price-wrap"><span class="small">Unidad</span>$' + json.table.rows[1].c[3].v + '</p>';
+    document.getElementById("canastitas").innerHTML = '<p class="price-wrap"><span class="small">Docena</span>$' + json.table.rows[2].c[2].v + '</p><p class="price-wrap"><span class="small">Unidad</span>$' + json.table.rows[2].c[3].v + '</p>';
     document.getElementById("pizzas").innerHTML = table;
 }
