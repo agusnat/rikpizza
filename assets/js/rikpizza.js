@@ -24,7 +24,7 @@ function myItems(jsonString){
     var json = JSON.parse(jsonString);
     var table = '';
     json.table.rows.forEach((line, i) => {
-        if(i > 1){
+        if(i > 2){
           table += '<div class="product-card"><div class="product-content"><div class="wrapper special">';
           table += '<h3 class="product-name">' + (line.c[0] ? line.c[0].v : '' ) + '</h3><div class="product-price">';
           try{
